@@ -9,13 +9,17 @@ import numpy as np
 import pyautogui as pg
 pg.PAUSE = 0
 
-#x, y, w, h = 585, 327, 244, 100
+
+
+#(x,y) to represent left-top corner of the rectangle, little away from dino
+#(x+w,y+h) bottom-right corner of the rectangle enclosing dino and coming cactus.
+x, y, w, h = 585, 327, 244, 100
 while True:
     img = ImageGrab.grab()
 
     img = cv2.cvtColor(np.array(img), cv2.COLOR_RGB2BGR)
 
-    img = img[327:427, 585:829]
+    img = img[ y:y+h, x:x+w ]
 
     for x0 in range(170,240,5):
         px = img[58,x0]
