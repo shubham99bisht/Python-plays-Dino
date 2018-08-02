@@ -1,7 +1,7 @@
 import os
 import sys
 import time
-from PIL import ImageGrab
+import pyscreenshot as ImageGrab
 from PIL import Image
 from os import environ
 import cv2
