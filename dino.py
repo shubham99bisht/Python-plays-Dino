@@ -1,13 +1,17 @@
 import os
 import sys
 import time
-import pyscreenshot as ImageGrab
 from PIL import Image
 from os import environ
 import cv2
 import numpy as np
 import pyautogui as pg
 pg.PAUSE = 0
+
+#for mac or windows users:
+from PIL import ImageGrab
+#for ubuntu users:
+#import pyscreenshot as ImageGrab
 
 
 
