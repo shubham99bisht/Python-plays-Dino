@@ -13,6 +13,7 @@ Python3 with following modules.
 5. open cv2
 6. numpy
 7. pyautogui
+8. pyscreenshot (for ubuntu users, instead of PIL)
 
 
 # Execution
